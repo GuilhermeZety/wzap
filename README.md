@@ -51,20 +51,18 @@ import 'package:flutter/material.dart';
 import 'package:zrepository/zrepository.dart';
 
 void main() async {
+  await WzapMessager().configure(
+      instance: 'sua instancia',
+      email: 'seu email de acesso',
+      password: 'sua senha de acesso',
+  );
   await sendMessage();
 }
 
 
 void sendMessage(){
-    var success = await WzapMessager().configure(
-        instance: 'sua instancia',
-        email: 'seu email de acesso',
-        password: 'sua senha de acesso',
-    );
-    if(sucess){
-        // não é necessário adicionar o + na frente do 55
-        await WzapMessager().sendMessage(message: 'Testando 123', phone: '5547999999999');
-    }
+  // não é necessário adicionar o + na frente do 55
+  await WzapMessager().sendMessage(message: 'Testando 123', phone: '5547999999999');
 }
 ```
 
