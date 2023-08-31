@@ -19,7 +19,9 @@ dependencies:
       ref: master
 ```
 
-primeiro é necessario instanciar o projeto com as configurações para integrar com o whatsapp, então adicione em seu main:
+
+Primeiro é necessario instanciar o projeto com as configurações para integrar com o whatsapp, então adicione em seu main:
+
 
 
 ```dart
@@ -39,7 +41,8 @@ main() async {
 ```
 
 Após configurações feitas é só começar a utilizar;
-segue o exemplo de uso:
+
+Segue o exemplo de uso:
 
 ```dart
 // ignore_for_file: must_be_immutable
@@ -66,5 +69,3 @@ void sendMessage(){
 ```
 
 Hope you like it!
-
-made with ❤️ by GuilhermeZety
