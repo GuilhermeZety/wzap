@@ -9,9 +9,14 @@ A reactive key-value store for Flutter projects.
 ## Getting started
 Primeiro, adicione o wzap ao seu pubspec.yaml.
 
+
+**Mude a url do repositório conforme o seu usuário e acesso ao bitbucket "Guilherme_Martins_w2o" é o meu usuário, adicione o seu respectivo**
 ```yaml
 dependencies:
-  wzap: ^0.0.1
+  wzap:
+    git:
+      url: https://Guilherme_Martins_w2o@bitbucket.org/time-w2o/wzap-flutter-package.git
+      ref: master
 ```
 
 primeiro é necessario instanciar o projeto com as configurações para integrar com o whatsapp, então adicione em seu main:
