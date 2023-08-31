@@ -2,13 +2,11 @@
 import 'package:wzap/src/wzap_service.dart';
 
 class WzapConfiguration {
-  String? token;
   String? instance;
   final String email;
   final String password;
 
   WzapConfiguration({
-    this.token,
     this.instance,
     required this.email,
     required this.password,
@@ -28,7 +26,6 @@ class WzapMessager {
 
     if (response != null) {
       configuration = WzapConfiguration(
-        token: response,
         instance: instance,
         email: email,
         password: password,
@@ -40,8 +37,11 @@ class WzapMessager {
 
   Future<bool> sendMessage({required String message, required String phone}) async {
     if (configuration != null) {
+      var response = await service.login(email: configuration!.email, password: configuration!.password);
+      if (response == null) return false;
+
       return await service.sendMessage(
-        token: configuration!.token!,
+        token: response,
         instance: configuration!.instance!,
         message: message,
         phone: phone,

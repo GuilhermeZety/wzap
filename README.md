@@ -16,14 +16,13 @@ dependencies:
 
 primeiro é necessario instanciar o projeto com as configurações para integrar com o whatsapp, então adicione em seu main:
 
-"Será retornado se houve sucesso ou não"
-
 
 ```dart
 
 main() async {
     ...
 
+    // Será retornado se houve sucesso ou não
     var success = await WzapMessager().configure(
         instance: 'sua instancia',
         email: 'seu email de acesso',

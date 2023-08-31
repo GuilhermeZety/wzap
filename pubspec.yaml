@@ -4,12 +4,11 @@ version: 0.0.1
 repository: https://bitbucket.org/time-w2o/wzap-flutter-package
 
 environment:
-  sdk: ^3.1.0
+  sdk: ^3.0.0
 
 # Add regular dependencies here.
 dependencies:
   dio: ^5.3.2
-  # path: ^1.8.0
 
 dev_dependencies:
   lints: ^2.0.0
