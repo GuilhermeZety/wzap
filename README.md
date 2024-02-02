@@ -13,10 +13,7 @@ Primeiro, adicione o wzap ao seu pubspec.yaml.
 **Mude a url do repositório conforme o seu usuário e acesso ao bitbucket "Guilherme_Martins_w2o" é o meu usuário, adicione o seu respectivo**
 ```yaml
 dependencies:
-  wzap:
-    git:
-      url: https://Guilherme_Martins_w2o@bitbucket.org/time-w2o/wzap-flutter-package.git
-      ref: master
+  wzap: versão aqui
 ```
 
 
