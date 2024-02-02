@@ -1,6 +1,6 @@
 name: wzap
 description: Whatsapp API integration sender for Flutter 
-version: 0.0.2
+version: 0.0.3
 repository: https://github.com/GuilhermeZety/wzap
 
 environment:
@@ -8,6 +8,7 @@ environment:
 
 # Add regular dependencies here.
 dependencies: 
+  dotenv: ^4.2.0
   http: ^1.1.0
 
 dev_dependencies:
